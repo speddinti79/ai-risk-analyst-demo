@@ -1,11 +1,11 @@
 import streamlit as st
 import pandas as pd
-from utils.ai_engine import get_ai_insight
 import sys
 import os
 sys.path.append(os.path.abspath('utils'))
 
 from utils.ai_engine import get_ai_insight
+#from utils.ai_engine import get_ai_insight
 
 
 # Load data
