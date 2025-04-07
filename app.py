@@ -3,8 +3,20 @@ import pandas as pd
 import sys
 import os
 sys.path.append(os.path.abspath('utils'))
+import openai
+import os
 
-from utils.ai_engine import get_ai_insight
+openai.api_key = os.getenv("OPENAI_API_KEY")
+
+def get_ai_insight(prompt):
+    response = openai.ChatCompletion.create(
+        model="gpt-4",
+        messages=[{"role": "user", "content": prompt}],
+        temperature=0.5
+    )
+    return response['choices'][0]['message']['content']
+
+#from utils.ai_engine import get_ai_insight
 #from utils.ai_engine import get_ai_insight
 
 
