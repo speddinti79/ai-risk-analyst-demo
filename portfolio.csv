@@ -1,4 +1,4 @@
-Ticker,	Exposure (%),	VaR (%)	Sector
+Ticker,	Exposure (%),	VaR (%),	Sector
 AAPL,	10.5,	2.1,	Tech
 XOM,	8.3,	1.5,	Energy
 TSLA,	5.2,	1.7,	Auto
